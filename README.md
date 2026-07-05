@@ -72,16 +72,13 @@
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=krol69&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=000000&title_color=FFFFFF&text_color=FFFFFF&icon_color=FFFFFF&border_color=1A1A1A" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=krol69&layout=compact&hide_border=true&bg_color=000000&title_color=FFFFFF&text_color=FFFFFF&icon_color=FFFFFF&border_color=1A1A1A&langs_count=8" />
+<img src="https://streak-stats.demolab.com?user=krol69&hide_border=true&border_radius=6&background=000000&border=1A1A1A&ring=FFFFFF&fire=8B0000&currStreakLabel=FFFFFF&sideNums=FFFFFF&sideLabels=888888&dates=555555&stroke=FFFFFF&currStreakNum=FFFFFF" />
 
-<br/>
+<br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=krol69&hide_border=true&background=000000&border=1A1A1A&ring=FFFFFF&fire=8B0000&currStreakLabel=FFFFFF&sideNums=FFFFFF&sideLabels=FFFFFF&dates=555555&stroke=FFFFFF&currStreakNum=FFFFFF" />
-
-<br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=krol69&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=8" />
+![Followers](https://img.shields.io/github/followers/krol69?style=for-the-badge&labelColor=0B0B0B&color=8B0000&logo=github&logoColor=white)
+&nbsp;
+![Views](https://komarev.com/ghpvc/?username=krol69&label=TRACED&color=8B0000&style=for-the-badge)
 
 </div>
 
