@@ -1,46 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" width="1280" height="440" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 460" width="1280" height="460" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
   <defs>
     <radialGradient id="glowV" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#6D28D9" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#6D28D9" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glowT" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.40"/>
-      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.60"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glowR" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#B91C1C" stop-opacity="0.38"/>
-      <stop offset="100%" stop-color="#B91C1C" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.50"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="45%" r="70%">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.75"/>
     </radialGradient>
     <linearGradient id="title" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#C9C9CF"/>
+      <stop offset="100%" stop-color="#B8B8C2"/>
     </linearGradient>
+    <linearGradient id="pillEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.40"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blurBig" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="34"/></filter>
+    <filter id="blurTitle" x="-40%" y="-60%" width="180%" height="260%"><feGaussianBlur stdDeviation="18"/></filter>
   </defs>
 
-  <rect width="1280" height="440" rx="0" fill="#08080A"/>
-  <ellipse cx="330" cy="150" rx="440" ry="300" fill="url(#glowV)"/>
-  <ellipse cx="980" cy="330" rx="460" ry="300" fill="url(#glowT)"/>
-  <ellipse cx="660" cy="250" rx="360" ry="240" fill="url(#glowR)"/>
+  <rect width="1280" height="460" fill="#050506"/>
 
-  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.05">
-    <circle cx="640" cy="205" r="150"/>
-    <circle cx="640" cy="205" r="205"/>
-    <circle cx="640" cy="205" r="260"/>
+  <g filter="url(#blurBig)">
+    <ellipse cx="360" cy="150" rx="360" ry="230" fill="url(#glowV)"/>
+    <ellipse cx="960" cy="330" rx="380" ry="240" fill="url(#glowT)"/>
+    <ellipse cx="650" cy="240" rx="300" ry="200" fill="url(#glowR)"/>
   </g>
 
-  <text x="640" y="228" text-anchor="middle" font-size="94" font-weight="800"
-        letter-spacing="8" fill="url(#title)">ZAUFANY</text>
+  <rect width="1280" height="460" fill="url(#vignette)"/>
 
-  <text x="640" y="276" text-anchor="middle" font-size="16.5" font-weight="500"
-        letter-spacing="7" fill="#9A9AA4">REVERSE&#160;ENGINEER&#160;&#160;·&#160;&#160;SECURITY&#160;RESEARCHER&#160;&#160;·&#160;&#160;EMBEDDED</text>
+  <g fill="none" stroke="#FFFFFF">
+    <circle cx="640" cy="212" r="150" stroke-opacity="0.07"/>
+    <circle cx="640" cy="212" r="210" stroke-opacity="0.05"/>
+    <circle cx="640" cy="212" r="272" stroke-opacity="0.035"/>
+  </g>
 
-  <g font-size="14" letter-spacing="1" fill="#B6B6BE" text-anchor="middle">
-    <rect x="335" y="312" width="200" height="38" rx="19" fill="#0F0F13" stroke="#26262C"/>
-    <text x="435" y="336.5">reverse engineering</text>
-    <rect x="553" y="312" width="190" height="38" rx="19" fill="#0F0F13" stroke="#26262C"/>
-    <text x="648" y="336.5">offensive security</text>
-    <rect x="761" y="312" width="185" height="38" rx="19" fill="#0F0F13" stroke="#26262C"/>
-    <text x="853.5" y="336.5">embedded systems</text>
+  <text x="640" y="236" text-anchor="middle" font-size="98" font-weight="800" letter-spacing="8"
+        fill="#7C3AED" fill-opacity="0.55" filter="url(#blurTitle)">ZAUFANY</text>
+  <text x="640" y="236" text-anchor="middle" font-size="98" font-weight="800" letter-spacing="8"
+        fill="url(#title)">ZAUFANY</text>
+
+  <text x="640" y="288" text-anchor="middle" font-size="16.5" font-weight="500" letter-spacing="7"
+        fill="#A6A6B2">REVERSE&#160;ENGINEER&#160;&#160;·&#160;&#160;SECURITY&#160;RESEARCHER&#160;&#160;·&#160;&#160;EMBEDDED</text>
+
+  <g font-size="14" letter-spacing="1" text-anchor="middle">
+    <g>
+      <rect x="335" y="324" width="200" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.05"/>
+      <rect x="335" y="324" width="200" height="19" rx="19" fill="url(#sheen)"/>
+      <rect x="335.5" y="324.5" width="199" height="37" rx="18.5" fill="none" stroke="url(#pillEdge)"/>
+      <text x="435" y="348.5" fill="#CFCFD8">reverse engineering</text>
+    </g>
+    <g>
+      <rect x="553" y="324" width="190" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.05"/>
+      <rect x="553" y="324" width="190" height="19" rx="19" fill="url(#sheen)"/>
+      <rect x="553.5" y="324.5" width="189" height="37" rx="18.5" fill="none" stroke="url(#pillEdge)"/>
+      <text x="648" y="348.5" fill="#CFCFD8">offensive security</text>
+    </g>
+    <g>
+      <rect x="761" y="324" width="185" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.05"/>
+      <rect x="761" y="324" width="185" height="19" rx="19" fill="url(#sheen)"/>
+      <rect x="761.5" y="324.5" width="184" height="37" rx="18.5" fill="none" stroke="url(#pillEdge)"/>
+      <text x="853.5" y="348.5" fill="#CFCFD8">embedded systems</text>
+    </g>
   </g>
 </svg>
