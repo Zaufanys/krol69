@@ -23,8 +23,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg?color_snake=%2300E5FF&color_dots=%23161b22,%23004d57,%23008394,%2300b8cf,%2300E5FF
-            dist/github-snake-dark.svg?color_snake=%2300E5FF&color_dots=%23161b22,%23004d57,%23008394,%2300b8cf,%2300E5FF
+            dist/github-snake.svg?color_snake=%238B0000&color_dots=%23161b22,%23555555,%23999999,%23cccccc,%23ffffff
+            dist/github-snake-dark.svg?color_snake=%238B0000&color_dots=%23161b22,%23555555,%23999999,%23cccccc,%23ffffff
 
       - name: Push snake animation to output branch
         uses: crazy-max/ghaction-github-pages@v4
