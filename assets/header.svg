@@ -35,9 +35,15 @@
   <rect width="1280" height="460" fill="#050506"/>
 
   <g filter="url(#blurBig)">
-    <ellipse cx="360" cy="150" rx="360" ry="230" fill="url(#glowV)"/>
-    <ellipse cx="960" cy="330" rx="380" ry="240" fill="url(#glowT)"/>
-    <ellipse cx="650" cy="240" rx="300" ry="200" fill="url(#glowR)"/>
+    <ellipse cx="360" cy="150" rx="360" ry="230" fill="url(#glowV)">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="7s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="960" cy="330" rx="380" ry="240" fill="url(#glowT)">
+      <animate attributeName="opacity" values="1;0.65;1" dur="9s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="650" cy="240" rx="300" ry="200" fill="url(#glowR)">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="6s" begin="-2s" repeatCount="indefinite"/>
+    </ellipse>
   </g>
 
   <rect width="1280" height="460" fill="url(#vignette)"/>

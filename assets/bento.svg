@@ -34,6 +34,22 @@
     <rect x="0" y="0" width="836" height="300" fill="#FFFFFF" fill-opacity="0.035"/>
     <rect x="0" y="0" width="836" height="150" fill="url(#sheen)"/>
     <rect x="1" y="1" width="834" height="1.5" fill="#FFFFFF" fill-opacity="0.10"/>
+    <g stroke="#7C7C8C" stroke-opacity="0.15" fill="none" stroke-width="1.4">
+      <path d="M560 66 H700 V116 H792"/>
+      <path d="M600 250 V190 H720 V150"/>
+      <path d="M540 150 H620 V210 H760"/>
+      <path d="M792 92 H700"/>
+    </g>
+    <g fill="#A78BFA" fill-opacity="0.45">
+      <circle cx="700" cy="116" r="3"/>
+      <circle cx="792" cy="116" r="3"/>
+      <circle cx="720" cy="150" r="3"/>
+      <circle cx="760" cy="210" r="3"/>
+      <circle cx="620" cy="150" r="3"/>
+    </g>
+    <circle r="3.4" fill="#67E8F9">
+      <animateMotion dur="4.5s" repeatCount="indefinite" path="M560 66 H700 V116 H792"/>
+    </circle>
   </g>
   <rect x="0.5" y="0.5" width="835" height="299" rx="22" fill="none" stroke="url(#edge)"/>
   <text x="44" y="52" font-size="13" font-weight="600" letter-spacing="4" fill="#A6A6B2">ABOUT</text>

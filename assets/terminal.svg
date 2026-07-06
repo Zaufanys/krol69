@@ -13,6 +13,11 @@
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.09"/>
       <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#67E8F9" stop-opacity="0"/>
+      <stop offset="85%" stop-color="#67E8F9" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0.14"/>
+    </linearGradient>
     <filter id="tBlur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="30"/></filter>
     <clipPath id="cT"><rect x="0" y="0" width="1280" height="240" rx="22"/></clipPath>
   </defs>
@@ -29,6 +34,9 @@
     <circle cx="58" cy="28" r="6.5" fill="#FEBC2E" fill-opacity="0.85"/>
     <circle cx="82" cy="28" r="6.5" fill="#28C840" fill-opacity="0.85"/>
     <text x="640" y="33" text-anchor="middle" font-size="13" letter-spacing="1" fill="#7A7A85">zaufany@node — recon.sh</text>
+    <rect x="0" y="54" width="1280" height="90" fill="url(#scan)">
+      <animateTransform attributeName="transform" type="translate" values="0,-90; 0,240" dur="5s" repeatCount="indefinite"/>
+    </rect>
   </g>
   <rect x="0.5" y="0.5" width="1279" height="239" rx="22" fill="none" stroke="url(#tEdge)"/>
 
@@ -37,6 +45,6 @@
     <text x="34" y="128"><tspan fill="#4ADE80">[+]</tspan><tspan fill="#B9B9C2"> handshake captured</tspan></text>
     <text x="34" y="158"><tspan fill="#4ADE80">[+]</tspan><tspan fill="#B9B9C2"> firmware dumped   </tspan><tspan fill="#67E8F9">0x08000000</tspan><tspan fill="#5A5A64">  (2.1 MB)</tspan></text>
     <text x="34" y="188"><tspan fill="#F59E0B">[~]</tspan><tspan fill="#B9B9C2"> decrypting keys  </tspan><tspan fill="#67E8F9">████████████</tspan><tspan fill="#2A2A31">░░░░</tspan><tspan fill="#B9B9C2">  78%</tspan></text>
-    <text x="34" y="218"><tspan fill="#4ADE80">[+]</tspan><tspan fill="#E8E8EE"> shell acquired. welcome back.</tspan><tspan fill="#4ADE80"> ▮</tspan></text>
+    <text x="34" y="218"><tspan fill="#4ADE80">[+]</tspan><tspan fill="#E8E8EE"> shell acquired. welcome back.</tspan><tspan fill="#4ADE80"> ▮<animate attributeName="fill-opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite"/></tspan></text>
   </g>
 </svg>
