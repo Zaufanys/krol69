@@ -1,85 +1,107 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 460" width="1280" height="460" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 470" width="1280" height="470" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
   <defs>
-    <radialGradient id="glowV" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.75"/>
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#FFFFFF" fill-opacity="0.05"/>
+    </pattern>
+    <radialGradient id="glowC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glowT" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.60"/>
-      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    <radialGradient id="glowP" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glowR" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.50"/>
-      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="vignette" cx="50%" cy="45%" r="70%">
-      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0.75"/>
+    <radialGradient id="vig" cx="50%" cy="42%" r="72%">
+      <stop offset="48%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.85"/>
     </radialGradient>
     <linearGradient id="title" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#B8B8C2"/>
+      <stop offset="100%" stop-color="#AEB0BE"/>
     </linearGradient>
-    <linearGradient id="pillEdge" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.40"/>
+    <linearGradient id="ul" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#67E8F9"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="pEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.38"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.05"/>
     </linearGradient>
     <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12"/>
       <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
-    <filter id="blurBig" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="34"/></filter>
-    <filter id="blurTitle" x="-40%" y="-60%" width="180%" height="260%"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="bBig" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="36"/></filter>
+    <filter id="bTitle" x="-40%" y="-70%" width="180%" height="280%"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="bUL" x="-20%" y="-400%" width="140%" height="900%"><feGaussianBlur stdDeviation="4"/></filter>
+    <clipPath id="ulClip"><rect x="500" y="258" width="280" height="6" rx="3"/></clipPath>
   </defs>
 
-  <rect width="1280" height="460" fill="#050506"/>
+  <rect width="1280" height="470" fill="#050507"/>
+  <rect width="1280" height="470" fill="url(#dots)"/>
 
-  <g filter="url(#blurBig)">
-    <ellipse cx="360" cy="150" rx="360" ry="230" fill="url(#glowV)">
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="7s" repeatCount="indefinite"/>
+  <g filter="url(#bBig)">
+    <ellipse cx="470" cy="150" rx="330" ry="210" fill="url(#glowP)">
+      <animate attributeName="opacity" values="0.65;1;0.65" dur="8s" repeatCount="indefinite"/>
     </ellipse>
-    <ellipse cx="960" cy="330" rx="380" ry="240" fill="url(#glowT)">
-      <animate attributeName="opacity" values="1;0.65;1" dur="9s" repeatCount="indefinite"/>
-    </ellipse>
-    <ellipse cx="650" cy="240" rx="300" ry="200" fill="url(#glowR)">
-      <animate attributeName="opacity" values="0.8;1;0.8" dur="6s" begin="-2s" repeatCount="indefinite"/>
+    <ellipse cx="820" cy="200" rx="360" ry="220" fill="url(#glowC)">
+      <animate attributeName="opacity" values="1;0.6;1" dur="10s" repeatCount="indefinite"/>
     </ellipse>
   </g>
 
-  <rect width="1280" height="460" fill="url(#vignette)"/>
+  <rect width="1280" height="470" fill="url(#vig)"/>
 
   <g fill="none" stroke="#FFFFFF">
-    <circle cx="640" cy="212" r="150" stroke-opacity="0.07"/>
-    <circle cx="640" cy="212" r="210" stroke-opacity="0.05"/>
-    <circle cx="640" cy="212" r="272" stroke-opacity="0.035"/>
+    <circle cx="640" cy="205" r="150" stroke-opacity="0.06"/>
+    <circle cx="640" cy="205" r="212" stroke-opacity="0.04"/>
   </g>
 
-  <text x="640" y="236" text-anchor="middle" font-size="98" font-weight="800" letter-spacing="8"
-        fill="#7C3AED" fill-opacity="0.55" filter="url(#blurTitle)">ZAUFANY</text>
-  <text x="640" y="236" text-anchor="middle" font-size="98" font-weight="800" letter-spacing="8"
-        fill="url(#title)">ZAUFANY</text>
+  <!-- status chip -->
+  <g>
+    <rect x="586" y="58" width="108" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.05"/>
+    <rect x="586.5" y="58.5" width="107" height="29" rx="14.5" fill="none" stroke="url(#pEdge)"/>
+    <circle cx="606" cy="73" r="4" fill="#34D399">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="620" y="77.5" font-size="12" letter-spacing="2" fill="#C7C7D2">ONLINE</text>
+  </g>
 
-  <text x="640" y="288" text-anchor="middle" font-size="16.5" font-weight="500" letter-spacing="7"
-        fill="#A6A6B2">REVERSE&#160;ENGINEER&#160;&#160;·&#160;&#160;SECURITY&#160;RESEARCHER&#160;&#160;·&#160;&#160;EMBEDDED</text>
+  <!-- title -->
+  <text x="640" y="230" text-anchor="middle" font-size="96" font-weight="800" letter-spacing="8"
+        fill="#22D3EE" fill-opacity="0.5" filter="url(#bTitle)">ZAUFANY</text>
+  <text x="640" y="230" text-anchor="middle" font-size="96" font-weight="800" letter-spacing="8" fill="url(#title)">ZAUFANY</text>
 
-  <g font-size="14" letter-spacing="1" text-anchor="middle">
+  <!-- animated underline -->
+  <rect x="500" y="259" width="280" height="4" rx="2" fill="url(#ul)" filter="url(#bUL)"/>
+  <rect x="500" y="259.5" width="280" height="3" rx="1.5" fill="url(#ul)"/>
+  <g clip-path="url(#ulClip)">
+    <rect x="500" y="258" width="70" height="6" fill="#FFFFFF" fill-opacity="0.9">
+      <animate attributeName="x" values="480;720;480" dur="3.6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <text x="640" y="304" text-anchor="middle" font-size="16" font-weight="500" letter-spacing="7"
+        fill="#9698A6">REVERSE&#160;ENGINEER&#160;&#160;·&#160;&#160;SECURITY&#160;RESEARCHER&#160;&#160;·&#160;&#160;EMBEDDED</text>
+
+  <g font-size="14" letter-spacing="1" text-anchor="middle" fill="#CFCFD8">
     <g>
-      <rect x="335" y="324" width="200" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.05"/>
-      <rect x="335" y="324" width="200" height="19" rx="19" fill="url(#sheen)"/>
-      <rect x="335.5" y="324.5" width="199" height="37" rx="18.5" fill="none" stroke="url(#pillEdge)"/>
-      <text x="435" y="348.5" fill="#CFCFD8">reverse engineering</text>
+      <rect x="335" y="338" width="200" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.05"/>
+      <rect x="335" y="338" width="200" height="19" rx="19" fill="url(#sheen)"/>
+      <rect x="335.5" y="338.5" width="199" height="37" rx="18.5" fill="none" stroke="url(#pEdge)"/>
+      <text x="435" y="362.5">reverse engineering</text>
     </g>
     <g>
-      <rect x="553" y="324" width="190" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.05"/>
-      <rect x="553" y="324" width="190" height="19" rx="19" fill="url(#sheen)"/>
-      <rect x="553.5" y="324.5" width="189" height="37" rx="18.5" fill="none" stroke="url(#pillEdge)"/>
-      <text x="648" y="348.5" fill="#CFCFD8">offensive security</text>
+      <rect x="553" y="338" width="190" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.05"/>
+      <rect x="553" y="338" width="190" height="19" rx="19" fill="url(#sheen)"/>
+      <rect x="553.5" y="338.5" width="189" height="37" rx="18.5" fill="none" stroke="url(#pEdge)"/>
+      <text x="648" y="362.5">offensive security</text>
     </g>
     <g>
-      <rect x="761" y="324" width="185" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.05"/>
-      <rect x="761" y="324" width="185" height="19" rx="19" fill="url(#sheen)"/>
-      <rect x="761.5" y="324.5" width="184" height="37" rx="18.5" fill="none" stroke="url(#pillEdge)"/>
-      <text x="853.5" y="348.5" fill="#CFCFD8">embedded systems</text>
+      <rect x="761" y="338" width="185" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.05"/>
+      <rect x="761" y="338" width="185" height="19" rx="19" fill="url(#sheen)"/>
+      <rect x="761.5" y="338.5" width="184" height="37" rx="18.5" fill="none" stroke="url(#pEdge)"/>
+      <text x="853.5" y="362.5">embedded systems</text>
     </g>
   </g>
 </svg>
