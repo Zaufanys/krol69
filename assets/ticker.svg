@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 52" width="1280" height="52" font-family="'JetBrains Mono','Consolas',monospace">
+  <defs>
+    <linearGradient id="tkEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#050507"/>
+      <stop offset="6%" stop-color="#050507" stop-opacity="0"/>
+      <stop offset="94%" stop-color="#050507" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#050507"/>
+    </linearGradient>
+    <clipPath id="tkClip"><rect x="0" y="0" width="1280" height="52" rx="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#tkClip)">
+    <rect x="0" y="0" width="1280" height="52" fill="#08080B"/>
+    <rect x="0" y="0" width="1280" height="52" fill="#FFFFFF" fill-opacity="0.02"/>
+    <g font-size="15" letter-spacing="3" fill="#8A8C99">
+      <g>
+        <text x="0" y="32">REVERSE ENGINEERING&#160;&#160;<tspan fill="#22D3EE">✦</tspan>&#160;&#160;FIRMWARE&#160;&#160;<tspan fill="#22D3EE">✦</tspan>&#160;&#160;CAN BUS&#160;&#160;<tspan fill="#22D3EE">✦</tspan>&#160;&#160;EXPLOIT DEV&#160;&#160;<tspan fill="#22D3EE">✦</tspan>&#160;&#160;EMBEDDED&#160;&#160;<tspan fill="#22D3EE">✦</tspan>&#160;&#160;GHIDRA&#160;&#160;<tspan fill="#22D3EE">✦</tspan>&#160;&#160;JTAG&#160;&#160;<tspan fill="#22D3EE">✦</tspan>&#160;&#160;</text>
+        <text x="1180" y="32">REVERSE ENGINEERING&#160;&#160;<tspan fill="#22D3EE">✦</tspan>&#160;&#160;FIRMWARE&#160;&#160;<tspan fill="#22D3EE">✦</tspan>&#160;&#160;CAN BUS&#160;&#160;<tspan fill="#22D3EE">✦</tspan>&#160;&#160;EXPLOIT DEV&#160;&#160;<tspan fill="#22D3EE">✦</tspan>&#160;&#160;EMBEDDED&#160;&#160;<tspan fill="#22D3EE">✦</tspan>&#160;&#160;GHIDRA&#160;&#160;<tspan fill="#22D3EE">✦</tspan>&#160;&#160;JTAG&#160;&#160;<tspan fill="#22D3EE">✦</tspan>&#160;&#160;</text>
+        <animateTransform attributeName="transform" type="translate" values="0,0; -1180,0" dur="22s" repeatCount="indefinite"/>
+      </g>
+    </g>
+    <rect x="0" y="0" width="1280" height="52" fill="url(#fade)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1279" height="51" rx="14" fill="none" stroke="url(#tkEdge)"/>
+</svg>
